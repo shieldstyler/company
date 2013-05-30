@@ -3,7 +3,7 @@ resources :employees
 
 root to: "employees#home"
 match '/new', to: 'employees#new'
-#match '/employees' to: 'employees'
+match '/employees' to: 'employees'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

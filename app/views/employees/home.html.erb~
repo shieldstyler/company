@@ -1,0 +1,27 @@
+<h1> Employee Page </h1>
+
+<div>
+
+	<%= form_for(@employee) do |f| %>
+		
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+
+		<%= f.label :age %>
+		<%= f.text_field :age %>
+
+		<%= f.label :operations %>
+		<%= f.text_field :operations, "OP" %>
+
+		<%= f.label :finance %>
+		<%= f.text_field :finance, "FN" %>
+
+		<%= f.label :marketing %>
+		<%= f.text_field :marketing, "MK" %>
+
+		<%= f.submit "Create Employee", class: "btn btn-primary" %>
+
+	<% end %>
+</div>
+
+</div>

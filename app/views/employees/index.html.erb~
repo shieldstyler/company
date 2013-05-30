@@ -1,0 +1,18 @@
+<h1> Employee INDEX Page </h1>
+<% @employees.each do |employee| %>
+	<li>
+	<%= employee.name %>
+	<%= employee.age %>
+	<%= employee.operations %>
+	<%= employee.finance %>
+	<%= employee.marketing %>
+	
+	<% if employee.company_id.nil? %>
+		0
+	<% else %>
+		<%= employee.company_id %>
+	<% end %>
+	
+	<%= link_to "delete", employee, method: :delete, confirm: "Are you sure?" %>
+	</li>
+<% end %>

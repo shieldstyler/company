@@ -1,0 +1,2 @@
+<h1> Employee Details Page </h1>
+<%= @employee.name %>
